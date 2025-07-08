@@ -1,0 +1,52 @@
+{
+  "/": {
+    "ULTRAVOX_APIKEY": {
+      "description": "Ultravox API Key",
+      "type": "string",
+      "required" : true,
+      "obscure" : true
+    },
+    "ULTRAVOX_PROMPT": {
+      "description": "Ultravox System Prompt",
+      "type": "string",
+      "uiHint": "textarea",
+      "required" : true
+    },
+    "ULTRAVOX_VOICE" : {
+      "description" : "The voice to use",
+      "type": "string",
+      "default" : "Tanya-English",
+      "required" : true
+    },
+    "FIRST_SPEAKER" : {
+      "description": "Who should speak first on the call",
+      "type": "string",
+      "default": "Agent",
+      "enum" : ["User", "Agent"],
+      "required" : true
+    },
+    "CALL_TRANSFER" : {
+      "description": "Allow ultravox to transfer the call to a human agent, None will disable, Cold will transfer the call and connec the caller to the agent immediatly, Warm will provide a summary to the human agent before the caller is connected.",
+      "type": "string",
+      "default": "None",
+      "enum" : ["None", "Cold", "Warm"],
+      "required" : true
+    },
+    "TRANSFER_TYPE" : {
+      "description": "Whether to use a SIP Refer or Dial a New call leg for the transfer to the human agent",
+      "type": "string",
+      "enum" : ["Refer", "Dial"]
+    },
+    "TRANSFER_TO": {
+      "description": "Number to transfer calls to human agent",
+      "type": "string"
+    },
+    "TRANSFER_FROM": {
+      "description": "Number to transfer calls to human agent",
+      "type": "string"
+    },
+    "TRANSFER_CARRIER" : {
+      "description": "Carrier to use when trasfering calls to human agent",
+      "type": "string"
+    }
+  }}
