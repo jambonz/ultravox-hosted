@@ -9,7 +9,7 @@
     "ULTRAVOX_PROMPT": {
       "description": "Ultravox System Prompt",
       "type": "string",
-      "uiHint": "textarea",
+      "uiHint": "filepicker",
       "required" : true
     },
     "ULTRAVOX_VOICE" : {
