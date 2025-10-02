@@ -12,6 +12,11 @@
       "uiHint": "filepicker",
       "required" : true
     },
+    "ULTRAVOX_LANGUAGE_HINT" : {
+      "description" : "BCP47 language code that may be used to guide speech recognition.",
+      "type": "string",
+      "default" : "en"
+    },
     "ULTRAVOX_VOICE" : {
       "description" : "The voice to use",
       "type": "string",
